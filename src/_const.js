@@ -1,5 +1,5 @@
 export const placeLocation = "20hvin";
-export let serverURI = "http://localhost:8080";
+export let serverURI = "";
 
 export const colors = {
   main: "white", //white
@@ -16,11 +16,11 @@ export const categoriesStyle2 = [];
 // pour les separations entre les articles
 export const allowedCategories = [];
 
-export const phoneNumber = "0648001051";
+export const phoneNumber = "";
 
-export const facebook = "fb://profile/103230504562398";
-export const instagram = "https://www.instagram.com/chez_josephine_ajaccio/";
-export const url = "https://chez-josephine.com";
-export const mail = "contact@chezjosephine.fr";
+export const facebook = "";
+export const instagram = "";
+export const url = "";
+export const mail = "";
 
 export const GOOGLE_API_KEY = "AIzaSyCXqBKgfwkkW1urDlW0_GBNaS79P1ZjU0E";
