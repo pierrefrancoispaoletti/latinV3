@@ -12,7 +12,6 @@ const ProductOverview = ({ loading, products, setFilter, filter }) => {
         products?.map((product, index) => {
           return (
             <div key={product._id} style={{ width: "100%" }}>
-              {/* {product?.subCategory && findSubCategoryName(product)} */}
               <ProductElement
                 product={product}
                 index={index}
