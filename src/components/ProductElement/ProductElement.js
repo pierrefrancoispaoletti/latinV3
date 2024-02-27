@@ -10,6 +10,19 @@ const ProductElement = ({ product, index, length }) => {
   const { _id, price, description, title, visible, category, couleur } =
     product;
   const user = useSelector(selectCurrentUser);
+
+  const wineContent = (couleur) => {
+    if (couleur) {
+      if (
+        couleur.some((color) => color.isChecked && color.value === "au verre")
+      ) {
+        return "AU VERRE";
+      } else {
+        return "75 cl";
+      }
+    }
+    return "";
+  };
   return (
     <TableauContent
       visible={user?.role === "isAdmin" || visible}
@@ -20,11 +33,13 @@ const ProductElement = ({ product, index, length }) => {
         <AdminButtonBar _id={_id} product={product} />
       )}
       <h3 className="title">
-        <span>{`${visible ? "" : "CACHÉ : "} ${title}`}</span>
+        <span style={{ display: "inline-block" }}>{`${
+          visible ? "" : "CACHÉ : "
+        } ${title} ${wineContent(couleur)}`}</span>
         {category !== "cave" || couleur.every((color) => !color.isChecked) ? (
           <span className="price">{price?.toFixed(2)} €</span>
         ) : (
-          <WineElement couleur={couleur} />
+          <WineElement couleur={couleur} wineContent={wineContent} />
         )}
       </h3>
       {/* <WineColorContainer>

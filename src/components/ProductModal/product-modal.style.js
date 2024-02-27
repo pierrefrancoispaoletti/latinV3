@@ -93,7 +93,7 @@ export const AddProductButtonStyled = styled.button`
 
 export const CheckBoxContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
   gap: 10px;
   justify-content: center;
   align-items: center;

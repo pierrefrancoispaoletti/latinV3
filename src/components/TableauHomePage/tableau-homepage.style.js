@@ -349,6 +349,7 @@ export const WineColorContainer = styled.div``;
 
 export const WinePriceContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: right;
   justify-content: center;
@@ -357,9 +358,12 @@ export const WinePriceContainer = styled.div`
 `;
 
 export const WinePriceElement = styled.span`
+  display: inline-block;
+  align-self: center;
   background-color: #565a68;
   margin-bottom: 8px;
-  width: 100%;
+  text-align: center;
+  width: 35%;
   ${getWineColor};
 `;
 

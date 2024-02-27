@@ -11,7 +11,7 @@ const ProductsPage = ({ loading, setLoading }) => {
 
   let category = params.category || "apero";
   useFetchProducts(setLoading, category);
-  useRemoveDuplicateSpans();
+  //  useRemoveDuplicateSpans();
   const [filter, setFilter] = useState("");
   const products = useSelector(selectProductsBySubCategory(filter, category));
 

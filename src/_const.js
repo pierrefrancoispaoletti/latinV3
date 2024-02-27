@@ -1,5 +1,5 @@
 export const placeLocation = "20hvin";
-export let serverURI = "";
+export let serverURI = "https://a-20h20-server-v2-6f2c2d3816e2.herokuapp.com";
 
 export const colors = {
   main: "white", //white

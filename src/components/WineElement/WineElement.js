@@ -7,7 +7,7 @@ import {
 import { faWineBottle, faWineGlass } from "@fortawesome/free-solid-svg-icons";
 import { colors } from "../../_const";
 
-const WineElement = ({ couleur }) => {
+const WineElement = ({ couleur, wineContent }) => {
   const getWineColor = (couleur) => {
     switch (couleur) {
       case "rouge":
@@ -36,6 +36,7 @@ const WineElement = ({ couleur }) => {
                 style={{
                   display: "flex",
                   wrap: "wrap",
+                  justifyContent: "center",
                   color: getWineColor(color.value),
                   background: "grey",
                   margin: "5px",

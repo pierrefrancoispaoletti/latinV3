@@ -20,14 +20,8 @@ const SubCategorySelector = ({ filter, findCategory, setFilter }) => {
 
   return (
     <SubCategoryFilterContainer
-      className={`subcategory-container ${open ? "isOpen" : "isClosed"}`}
+      className={`subcategory-container ${open ? "isOpen" : "isOpen"}`}
     >
-      <div
-        className={`menu ${filter === "" ? "selected" : ""}`}
-        onClick={() => handleSetFilter("")}
-      >
-        <span>Tous</span>
-      </div>
       {findCategory?.subCategory?.map((sub) => (
         <div
           key={sub.name}
@@ -38,12 +32,6 @@ const SubCategorySelector = ({ filter, findCategory, setFilter }) => {
           {sub.logo && <img width={sub.width} src={sub.logo} alt={sub.alt} />}
         </div>
       ))}
-      <OpenSubMenuChevron
-        className="chevron"
-        icon={open ? faChevronUp : faChevronDown}
-        size="2x"
-        onClick={() => setOpen(!open)}
-      />
     </SubCategoryFilterContainer>
   );
 };
