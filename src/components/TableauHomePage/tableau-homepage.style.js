@@ -302,12 +302,11 @@ export const TableauContent = styled.div`
     margin: 12px auto;
     font-weight: bold;
     & > span {
-      max-width: 65%;
+      width: 100%;
       text-align: left;
     }
     @media (max-width: 420px) {
       & > span {
-        width: 70%;
         text-align: center;
       }
       justify-content: center;
@@ -354,6 +353,7 @@ export const WinePriceContainer = styled.div`
   text-align: right;
   justify-content: center;
   vertical-align: baseline;
+  width: 100%;
   ${getWineColor};
 `;
 

@@ -35,7 +35,7 @@ const ProductElement = ({ product, index, length }) => {
       <h3 className="title">
         <span style={{ display: "inline-block" }}>{`${
           visible ? "" : "CACHÉ : "
-        } ${title} ${wineContent(couleur)}`}</span>
+        } ${title}`}</span>
         {category !== "cave" || couleur.every((color) => !color.isChecked) ? (
           <span className="price">{price?.toFixed(2)} €</span>
         ) : (
