@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 import "./copyright.style.js";
-import { faHeart, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { facebook, instagram, phoneNumber, url } from "../../_const";
+import {
+  faEnvelope,
+  faHeart,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { facebook, instagram, mail, phoneNumber, url } from "../../_const";
 import { CopyrightStyled } from "./copyright.style.js";
 const Copyright = () => {
   return (
@@ -38,7 +42,7 @@ const Copyright = () => {
         <h3>Contactez nous ! </h3>
       </div>
       <div className="footer__icons">
-        {/* <a href={`mailto:${mail}`}>
+        <a href={`mailto:${mail}`}>
           <FontAwesomeIcon
             style={{
               color: "black",
@@ -47,8 +51,8 @@ const Copyright = () => {
             icon={faEnvelope}
             pull="left"
           />
-        </a> */}
-        <a href={phoneNumber}>
+        </a>
+        <a href={`tel:${phoneNumber}`}>
           <FontAwesomeIcon
             style={{
               color: "black",

@@ -16,11 +16,11 @@ export const categoriesStyle2 = [];
 // pour les separations entre les articles
 export const allowedCategories = [];
 
-export const phoneNumber = "";
+export const phoneNumber = "+33495722052";
 
-export const facebook = "";
-export const instagram = "";
-export const url = "";
-export const mail = "";
+export const facebook = "https://www.facebook.com/20HeuresVin";
+export const instagram = "https://www.instagram.com/le_20_heures_vin";
+export const url = "https://20h20.fr";
+export const mail = "christophe.torre75@gmail.com";
 
 export const GOOGLE_API_KEY = "AIzaSyCXqBKgfwkkW1urDlW0_GBNaS79P1ZjU0E";
