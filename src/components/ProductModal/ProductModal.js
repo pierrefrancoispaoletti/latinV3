@@ -40,7 +40,7 @@ const ProductModal = ({ currentCategory }) => {
       { value: "rouge", isChecked: false, price: "" },
       { value: "blanc", isChecked: false, price: "" },
       { value: "rosé", isChecked: false, price: "" },
-      { value: "au verre", isChecked: false, price: "" },
+      // { value: "au verre", isChecked: false, price: "" },
     ],
     subCategory: "",
   };
@@ -68,7 +68,11 @@ const ProductModal = ({ currentCategory }) => {
   );
 
   return (
-    <AddProductModalContainer open={open} className="modal">
+    <AddProductModalContainer
+      open={open}
+      className="modal"
+      scrollY={window.scrollY}
+    >
       <AddProductTitle>
         <h3>{`${type?.toUpperCase()}`}</h3>
         <CloseIconButton

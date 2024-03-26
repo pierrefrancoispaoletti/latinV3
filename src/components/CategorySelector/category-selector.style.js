@@ -25,7 +25,7 @@ export const CategoryItem = styled.li`
   height: 75px;
   margin: 0px 8px;
   background: ${colors.gold};
-  border: 3px solid ${colors.ecriture};
+  border: 3px solid ${colors.secondary};
   border-radius: 100%;
   padding: 6px;
   box-shadow: 0px 9px 15px -5px rgba(0, 0, 0, 0.58);
@@ -42,7 +42,7 @@ export const CategoryTitle = styled.span`
   font-size: 1em;
   text-align: center;
   width: 100%;
-  color: ${colors.main};
+  color: ${colors.secondary};
 `;
 
 export const LinkContainer = styled(NavLink)`
@@ -51,8 +51,10 @@ export const LinkContainer = styled(NavLink)`
     /* text-decoration: underline ${colors.main}; */
     & > li {
       background: ${colors.secondary};
-      border: 3px solid ${colors.gold};
-      color: ${colors.main};
+      border: 3px solid ${colors.tertiary};
+      & > span {
+        color: ${colors.tertiary};
+      }
     }
   }
 `;

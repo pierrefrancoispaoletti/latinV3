@@ -40,7 +40,7 @@ const isDisabled = (props) => {
 export const AddProductModalContainer = styled.div`
   position: fixed;
   z-index: 18;
-  top: 10px;
+  top: ${(props) => props.scrollY + "px"};
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.9);
@@ -54,7 +54,7 @@ export const AddProductModalContainer = styled.div`
   & > form {
     width: 80%;
   }
-  margin: 15px 15px;
+  margin: 15px auto;
 `;
 
 export const CloseIconButton = styled.button`

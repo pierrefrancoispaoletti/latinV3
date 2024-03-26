@@ -8,7 +8,14 @@ import {
   faHeart,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { facebook, instagram, mail, phoneNumber, url } from "../../_const";
+import {
+  facebook,
+  instagram,
+  mail,
+  nomEtab,
+  phoneNumber,
+  url,
+} from "../../_const";
 import { CopyrightStyled } from "./copyright.style.js";
 const Copyright = () => {
   return (
@@ -20,8 +27,8 @@ const Copyright = () => {
         <a target="_blank" href={facebook} rel="noreferrer">
           <FontAwesomeIcon
             style={{
-              color: "black",
-              background: "transparent",
+              color: "rgb(59,89,152)",
+              background: "white",
               borderRadius: "100%",
             }}
             size="3x"
@@ -31,7 +38,7 @@ const Copyright = () => {
         </a>
         <a target="_blank" href={instagram} rel="noreferrer">
           <FontAwesomeIcon
-            style={{ color: "black", borderRadius: "100%" }}
+            style={{ color: "rgb(63,114,155)", borderRadius: "100%" }}
             size="3x"
             icon={faInstagram}
             pull="right"
@@ -45,7 +52,7 @@ const Copyright = () => {
         <a href={`mailto:${mail}`}>
           <FontAwesomeIcon
             style={{
-              color: "black",
+              color: "rgb(63,114,155)",
             }}
             size="3x"
             icon={faEnvelope}
@@ -55,7 +62,7 @@ const Copyright = () => {
         <a href={`tel:${phoneNumber}`}>
           <FontAwesomeIcon
             style={{
-              color: "black",
+              color: "rgb(63,114,155)",
             }}
             size="3x"
             icon={faPhone}
@@ -65,7 +72,7 @@ const Copyright = () => {
       <div className="footer__copyright" style={{ color: "white" }}>
         {"Copyright © "}
         <a className="link" href={url}>
-          <span>20hVin&nbsp;</span>
+          <span>{`${nomEtab}`}&nbsp;</span>
         </a>
         <span>{` ${new Date().getFullYear()}. `}</span>
       </div>

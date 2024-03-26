@@ -1,14 +1,15 @@
-export const placeLocation = "20hvin";
-export let serverURI = "https://a-20h20-server-v2-6f2c2d3816e2.herokuapp.com";
+export const placeLocation = "cafelatin";
+export let serverURI = "";
 
 export const colors = {
-  main: "white", //white
-  secondary: "#777758", //vert foncé
-  tertiary: "#62714e", // vert clair
-  ecriture: "#000000", //black
-  background: "#f4ba9a",
-  background2: "#ff8080",
-  gold: "#7B7338",
+  main: "white",
+  secondary: "#BA232A", // rouge
+  tertiary: "#FBF0DB", // beige
+  border: "#FBF0DB", // beige
+  ecriture: "black", //black
+  background: "black",
+  background2: "black",
+  gold: "#FBF0DB", //beige
 };
 // pour le style2 et non pas le style ardoise
 export const categoriesStyle2 = [];
@@ -16,11 +17,13 @@ export const categoriesStyle2 = [];
 // pour les separations entre les articles
 export const allowedCategories = [];
 
-export const phoneNumber = "+33495722052";
+export const phoneNumber = "+33609542757";
 
-export const facebook = "https://www.facebook.com/20HeuresVin";
-export const instagram = "https://www.instagram.com/le_20_heures_vin";
-export const url = "https://20h20.fr";
+export const nomEtab = "Le Café Latin";
+
+export const facebook = "https://www.facebook.com/";
+export const instagram = "https://www.instagram.com/";
+export const url = "https://labrasserie3ruefesch.com/";
 export const mail = "christophe.torre75@gmail.com";
 
 export const GOOGLE_API_KEY = "AIzaSyCXqBKgfwkkW1urDlW0_GBNaS79P1ZjU0E";
