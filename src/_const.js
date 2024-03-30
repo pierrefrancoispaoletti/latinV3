@@ -1,5 +1,5 @@
 export const placeLocation = "cafelatin";
-export let serverURI = "http://localhost:8080";
+export let serverURI = "https://cafelatin.herokuapp.com";
 
 export const colors = {
   main: "white",
@@ -17,13 +17,13 @@ export const categoriesStyle2 = [];
 // pour les separations entre les articles
 export const allowedCategories = [];
 
-export const phoneNumber = "+33609542757";
+export const phoneNumber = "+33619010129";
 
 export const nomEtab = "Le Café Latin";
 
-export const facebook = "https://www.facebook.com/";
-export const instagram = "https://www.instagram.com/";
+export const facebook = "https://www.facebook.com/Cafelatinajaccio/";
+export const instagram = "https://www.instagram.com/cafelatin.ajaccio";
 export const url = "https://labrasserie3ruefesch.com/";
-export const mail = "christophe.torre75@gmail.com";
+export const mail = "lecafelatin@orange.fr";
 
-export const GOOGLE_API_KEY = "AIzaSyCXqBKgfwkkW1urDlW0_GBNaS79P1ZjU0E";
+export const GOOGLE_API_KEY = "AIzaSyBk9HYYrfPI-3YKfFoLjsOiKBJjhTqfN2g";
