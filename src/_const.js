@@ -1,5 +1,5 @@
 export const placeLocation = "cafelatin";
-export let serverURI = "";
+export let serverURI = "http://localhost:8080";
 
 export const colors = {
   main: "white",

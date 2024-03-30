@@ -16,7 +16,7 @@ export const categories = [
     name: "Spécialités Corses",
     title: "Spécialités Corses",
     link: "/products/corses",
-    slug: "specialites-corses",
+    slug: "corses",
   },
   {
     name: "Bruschettas",
@@ -53,6 +53,38 @@ export const categories = [
     title: "Desserts",
     link: "/products/desserts",
     slug: "desserts",
+  },
+  {
+    name: "Softs et boissons chaudes",
+    title: "Softs et boissons chaudes",
+    link: "/products/softs",
+    slug: "softs",
+  },
+  {
+    name: "Biéres",
+    title: "Biéres",
+    link: "/products/bieres",
+    slug: "bieres",
+  },
+  {
+    name: "Cocktails",
+    title: "Cocktails",
+    link: "/products/cocktails",
+    slug: "cocktails",
+    subCategory: [
+      {
+        name: "Avec Alcool",
+        slug: "cocktails-avec-alcool",
+      },
+      {
+        name: "Sans Alcool",
+        slug: "cocktails-sans-alcool",
+      },
+      {
+        name: "Signature LN Mattei",
+        slug: "cocktails-signature-ln-mattei",
+      },
+    ],
   },
   // {
   //   name: "Vitrine Salée",
