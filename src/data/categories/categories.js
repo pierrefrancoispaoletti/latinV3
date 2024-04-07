@@ -7,28 +7,16 @@ import logoBoissons from "../../assets/images/boissons.png";
 const logoSmall = "20px";
 export const categories = [
   {
+    name: "Suggestions",
+    title: "Nos suggestions du jour",
+    link: "/",
+    slug: "suggestions",
+  },
+  {
     name: "Nos Salades",
     title: "Nos salades",
-    link: "/",
+    link: "/products/salades",
     slug: "salades",
-  },
-  {
-    name: "Spécialités Corses",
-    title: "Spécialités Corses",
-    link: "/products/corses",
-    slug: "corses",
-  },
-  {
-    name: "Bruschettas",
-    title: "Bruschettas",
-    link: "/products/bruschettas",
-    slug: "bruschettas",
-  },
-  {
-    name: "Menu-Enfant",
-    title: "Menu-Enfant",
-    link: "/products/menu-enfant",
-    slug: "menu-enfant",
   },
   {
     name: "Nos Viandes",
@@ -43,10 +31,28 @@ export const categories = [
     slug: "poissons",
   },
   {
+    name: "Spécialités Corses",
+    title: "Spécialités Corses",
+    link: "/products/corses",
+    slug: "corses",
+  },
+  {
     name: "Végétarien",
     title: "Végétarien",
     link: "/products/vegetariens",
     slug: "vegetariens",
+  },
+  {
+    name: "Bruschettas",
+    title: "Bruschettas",
+    link: "/products/bruschettas",
+    slug: "bruschettas",
+  },
+  {
+    name: "Menu-Enfant",
+    title: "Menu-Enfant",
+    link: "/products/menu-enfant",
+    slug: "menu-enfant",
   },
   {
     name: "Nos Desserts",
@@ -59,12 +65,32 @@ export const categories = [
     title: "Softs et boissons chaudes",
     link: "/products/softs",
     slug: "softs",
+    subCategory: [
+      {
+        name: "boissons chaudes",
+        slug: "boissons-chaudes",
+      },
+      {
+        name: "Sodas et eaux",
+        slug: "sodas-et-eaux",
+      },
+    ],
   },
   {
-    name: "Biéres",
-    title: "Biéres",
-    link: "/products/bieres",
-    slug: "bieres",
+    name: "Alcools",
+    title: "Alcools",
+    link: "/products/alcools",
+    slug: "alcools",
+    subCategory: [
+      {
+        name: "Biéres",
+        slug: "bieres",
+      },
+      {
+        name: "Spiritueux",
+        slug: "spiritueux",
+      },
+    ],
   },
   {
     name: "Cocktails",
