@@ -1,10 +1,16 @@
 import React from "react";
 import AdminButtonBar from "../AdminButtonBar/AdminButtonBar";
-import { TableauContent } from "../TableauHomePage/tableau-homepage.style";
+import {
+  TableauContent,
+  WineColorContainer,
+  WineItemElement,
+} from "../TableauHomePage/tableau-homepage.style";
 import { selectCurrentUser } from "../../redux/reducers/User/selector";
 import { useSelector } from "react-redux";
 import WineElement from "../WineElement/WineElement";
 import TranslatorComponent from "../TranslatorComponent/TranslatorComponent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWineBottle } from "@fortawesome/free-solid-svg-icons";
 
 const ProductElement = ({ product, index, length }) => {
   const { _id, price, description, title, visible, category, couleur } =
@@ -42,16 +48,6 @@ const ProductElement = ({ product, index, length }) => {
           <WineElement couleur={couleur} wineContent={wineContent} />
         )}
       </h3>
-      {/* <WineColorContainer>
-        {couleur.map(
-          (color) =>
-            color.isChecked && (
-              <WineItemElement key={color.value} color={color.value}>
-                <FontAwesomeIcon icon={faWineBottle} size="2x" />
-              </WineItemElement>
-            )
-        )}
-      </WineColorContainer> */}
       <p className="description">
         {description?.length > 0 && (
           <TranslatorComponent>

@@ -77,6 +77,12 @@ export const categories = [
     ],
   },
   {
+    name: "La Cave",
+    title: "La Cave",
+    link: "/products/cave",
+    slug: "cave",
+  },
+  {
     name: "Alcools",
     title: "Alcools",
     link: "/products/alcools",
