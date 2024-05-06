@@ -9,7 +9,9 @@ import useRemoveDuplicateSpans from "../../useRemoveDuplicateSpans/useRemoveDupl
 const ProductsPage = ({ loading, setLoading }) => {
   const params = useParams();
 
-  let category = params.category || "suggestions";
+  console.log(params);
+
+  let category = params.category || "corses";
   useFetchProducts(setLoading, category);
   //  useRemoveDuplicateSpans();
   const [filter, setFilter] = useState("");
