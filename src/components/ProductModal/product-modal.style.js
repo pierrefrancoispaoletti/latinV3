@@ -40,7 +40,7 @@ const isDisabled = (props) => {
 export const AddProductModalContainer = styled.div`
   position: fixed;
   z-index: 18;
-  top: ${(props) => props.scrollY + "px"};
+  top: 0;
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.9);

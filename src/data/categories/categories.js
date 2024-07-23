@@ -1,10 +1,3 @@
-import { faWineBottle, faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logoBagel from "../../assets/images/bagel.png";
-import logoSalade from "../../assets/images/salade.png";
-import logoVin from "../../assets/images/vin.png";
-import logoBoissons from "../../assets/images/boissons.png";
-const logoSmall = "20px";
 export const categories = [
   {
     name: "Suggestions",
