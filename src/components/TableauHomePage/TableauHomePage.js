@@ -13,11 +13,12 @@ import { useSelector } from "react-redux";
 import { selectCurrentUser } from "../../redux/reducers/User/selector";
 import SubCategorySelector from "../SubCategorySelector/SubCategorySelector";
 import { categoriesStyle2 } from "../../_const";
+import TranslatorComponent from "../TranslatorComponent/TranslatorComponent";
 
 const TableauHomePage = ({ setFilter, children, filter }) => {
   const location = useLocation();
   let findCategory = categories.find(
-    (category) => category.link === location.pathname
+    (category) => category.link === location.pathname,
   );
   const user = useSelector(selectCurrentUser);
 
@@ -28,12 +29,12 @@ const TableauHomePage = ({ setFilter, children, filter }) => {
   const prevlocationValue = prevlocationValueRef.current;
   return (
     <TableauContainer
-      className="tableau-homepage"
+      className='tableau-homepage'
       style2={categoriesStyle2.includes(findCategory?.slug)}
     >
       <TableauWrapper
         transition={prevlocationValue !== location.pathname}
-        transitionType=""
+        transitionType=''
       >
         <TableauTitle>{findCategory?.title ?? findCategory?.name}</TableauTitle>
         {/* {findCategory?.logo && (
@@ -43,7 +44,9 @@ const TableauHomePage = ({ setFilter, children, filter }) => {
             alt={findCategory?.alt}
           />
         )} */}
-        <TableauLegend>{findCategory?.legend}</TableauLegend>
+        <TranslatorComponent>
+          <TableauLegend>{findCategory?.legend}</TableauLegend>
+        </TranslatorComponent>
         {findCategory?.subCategory && (
           <SubCategorySelector
             filter={filter}

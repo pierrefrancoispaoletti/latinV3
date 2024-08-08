@@ -201,7 +201,7 @@ const hexToRGB = (hex) => {
   return result
     ? `rgba(${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(
         result[3],
-        16
+        16,
       )}, 0.6)`
     : null;
 };
@@ -267,7 +267,9 @@ export const TableauLegend = styled.p`
   margin: 8px 12px;
   text-align: center;
   line-height: 1.6;
-  color: ${colors.ecriture};
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 `;
 
 export const TableauContent = styled.div`

@@ -44,6 +44,7 @@ export const categories = [
   {
     name: "Menu-Enfant",
     title: "Menu-Enfant",
+    legend: "Jusqu'a 12 ans maximum",
     link: "/products/menu-enfant",
     slug: "menu-enfant",
   },
