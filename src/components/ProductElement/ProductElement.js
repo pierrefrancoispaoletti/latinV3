@@ -29,6 +29,8 @@ const ProductElement = ({ product, index, length }) => {
     }
     return "";
   };
+  const userLang = navigator.language || navigator.userLanguage;
+  const isFrench = userLang.includes("fr");
   return (
     <TableauContent
       visible={user?.role === "isAdmin" || visible}
@@ -36,19 +38,34 @@ const ProductElement = ({ product, index, length }) => {
       last={index === length - 1}
     >
       {user && user.role === "isAdmin" && (
-        <AdminButtonBar _id={_id} product={product} />
+        <AdminButtonBar
+          _id={_id}
+          product={product}
+        />
       )}
-      <h3 className="title">
+      <h3 className='title'>
         <span style={{ display: "inline-block" }}>{`${
           visible ? "" : "CACHÉ : "
         } ${title}`}</span>
+        {!isFrench && (
+          <span style={{ display: "inline-block", fontSize: "17px" }}>
+            {title?.length > 0 && (
+              <TranslatorComponent>
+                {title?.replace("\n", " ")}
+              </TranslatorComponent>
+            )}
+          </span>
+        )}
         {category !== "cave" || couleur.every((color) => !color.isChecked) ? (
-          <span className="price">{price?.toFixed(2)} €</span>
+          <span className='price'>{price?.toFixed(2)} €</span>
         ) : (
-          <WineElement couleur={couleur} wineContent={wineContent} />
+          <WineElement
+            couleur={couleur}
+            wineContent={wineContent}
+          />
         )}
       </h3>
-      <p className="description">
+      <p className='description'>
         {description?.length > 0 && (
           <TranslatorComponent>
             {description?.replace("\n", " ")}
